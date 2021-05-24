@@ -1,0 +1,181 @@
+#analytics{
+    display: flex;
+    width: 100%;
+    margin: 4% auto;
+    justify-content: space-around;
+}
+
+ #analytics-graph{
+     display: flex;
+     justify-content: center;
+     width: 50%;
+ }
+ /*#analytics-graph img{
+    width: 100%;
+ }
+ */
+ #analytics-text{
+    display: flex;
+    flex-direction: column;
+    width: 38%;
+ }
+ #analytics-title{
+     width: 90%;
+     font-family: Aileron;
+     font-style: normal;
+     font-weight: bold;
+     font-size: 48px;
+     line-height: 58px;
+     letter-spacing: 0.8px;
+     
+     color: #000000;
+     margin-bottom: 5%;
+
+ }
+
+ #analytics-explanation{
+     width: 80%;
+    font-family: Aileron;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 28px;
+    /* or 156% */
+    
+    letter-spacing: 0.27px;
+    
+    color: #3B3A40;
+    margin-bottom: 3%;
+ }
+
+ #analytics-features{
+     width: 100%;
+     display: flex;
+     flex-direction: column;
+ }
+
+ #analytics-features .feature{
+     display: flex;
+     flex-direction: column;
+     margin-bottom: 4%;
+ }
+ #analytics-features .feature-title{
+    font-family: Aileron;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 19px;
+    letter-spacing: 0.3px;
+    
+    color: #3B3A40;
+    margin-bottom: 1%;    
+ }
+ #analytics-features .analytics-feature-text{
+     text-align: start;
+    font-family: Aileron;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 162%;
+    /* or 162% */
+    
+    letter-spacing: 0.2px;
+    
+    color: #64626A;
+ }
+ #analytics-features .feature1 .feature-title span{
+     position: relative;
+ }
+ #analytics-features .feature1 .feature-title span::before{
+     position: absolute;
+     width: 24px;
+     height: 24px;
+     left: -25px;
+     content: "";
+     background-image: url('./images/ic_Layer.svg');
+ }
+
+ #analytics-features .feature2 .feature-title span{
+    position: relative;
+}
+#analytics-features .feature2 .feature-title span::before{
+    position: absolute;
+    width: 24px;
+    height: 24px;
+    left: -25px;
+    content: "";
+    background-image: url('./images/Sync.svg');
+}
+
+@media only screen and (max-width:768px){
+   #analytics{
+       flex-direction: column-reverse;
+   }
+   #analytics-graph{
+       width: 100%;
+   }
+   #analytics-text{
+       width: 100%;
+       
+   }
+   #analytics-title{
+       display: flex;
+       width: 100%;
+       text-align: center;
+   }
+   #analytics-explanation{
+       width: 100%;
+       text-align: center;
+   }
+   #analytics-features{
+       flex-direction: row;
+      
+       padding-left: 8%;
+   }
+
+    
+}
+
+@media only screen and (max-width:320px){
+    #analytics-graph img{
+        width: 100%;
+    }
+
+#analytics-features{
+       flex-direction: column;
+      
+       padding-left: 8%;
+   }
+   #analytics-features .feature{
+       margin-top: 30px;
+       display: flex;
+       width: 100%;
+       align-items: center;
+       
+   }
+   #analytics-features .feature1 .feature-title span::before{
+    position: absolute;
+    width: 24px;
+    height: 24px;
+    left: 50%;
+    top: -20px;
+    content: "";
+    background-image: url('./images/ic_Layer.svg');
+    
+}
+   #analytics-features .feature2 .feature-title span::before{
+    position: absolute;
+    width: 24px;
+    height: 24px;
+    left: 50%;
+    top: -20px;
+    content: "";
+    background-image: url('./images/Sync.svg');
+    
+}
+#analytics-features .analytics-feature-text{
+    text-align: center;
+}
+    
+}
+

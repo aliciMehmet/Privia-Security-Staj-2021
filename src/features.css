@@ -1,0 +1,220 @@
+@import url("https://use.typekit.net/ghl4zvs.css");
+#features{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /*sonradan*/
+    background: #FFFFFF;
+    border-radius: 48px 48px 0px 0px;
+    margin-top: -115px;
+}
+
+#features-upper{
+    display: flex;
+    justify-content: center;
+    margin-top: 5%;
+}
+
+#upper-title{
+    max-width: 40%;
+
+    font-family: Aileron;
+font-style: normal;
+font-weight: bold;
+font-size: 48px;
+line-height: 58px;
+letter-spacing: 0.8px;
+
+color: #000000;
+
+}
+#upper-text{
+    max-width: 33%;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    font-family: Aileron;
+font-style: normal;
+font-weight: normal;
+font-size: 16px;
+line-height: 162%;
+/* or 162% */
+
+letter-spacing: 0.24px;
+
+color: #3B3A40;
+
+}
+
+#features-down{
+    display: flex;
+    justify-content: center;
+    padding-left: 8%;
+}
+
+#features-down #features-down-elements{
+    width: 80%;
+    margin-top: 5%;
+   
+    display: flex;
+    justify-content:center;
+    align-items: center;
+
+    flex-wrap: wrap;
+}
+
+#features-down #features-down-elements .features-element{
+    flex: 50%;
+    max-width: 50%;
+    margin-bottom: 5%;
+    padding-right: 12%;
+}
+#features-down #features-down-elements .features-element .learn-more{
+    margin-top: 2%;
+}
+#features-down #features-down-elements .features-element .learn-more a{
+    text-decoration: none;
+    font-family: Aileron;
+font-style: normal;
+font-weight: 600;
+font-size: 14px;
+line-height: 17px;
+/* identical to box height */
+
+
+color: #1E5579;
+}
+
+
+#features-down #features-down-elements .features-element .features-element-title{
+text-align: start;
+    font-family: Aileron;
+font-style: normal;
+font-weight: bold;
+font-size: 24px; /* 24px*/
+line-height: 29px;
+/* identical to box height */
+
+letter-spacing: 0.45px;
+
+color: #3B3A40;
+
+}
+
+#features-down #features-down-elements .features-element .features-element-text{
+font-family: Aileron;
+font-style: normal;
+font-weight: normal;
+font-size: 18px;
+line-height: 28px;
+/* or 156% */
+
+letter-spacing: 0.27px;
+
+color: #64626A;
+}
+#features-down-elements .features-element{
+    position: relative;
+}
+#features-down-elements .features-element::before{
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    content: "";
+    background-image: url('./images/ic_PieChart.svg');
+    left: -20%;
+    top:25%;
+
+}
+
+@media only screen and (max-width:768px){
+    #features-upper{
+        margin-top: 2.5%;
+        justify-content: space-around;
+    }
+    #upper-title{
+        font-size: 32px;
+line-height: 38px;
+letter-spacing: 0.5px;
+
+    }
+
+    #upper-text{
+        width: 100%;
+    }
+    
+}
+
+
+@media only screen and (max-width:320px){
+    #features-upper{
+        width: 100%;
+        justify-content: center;
+        flex-direction: column;
+        
+        align-items: center;
+        font-size: 24px;
+        line-height: 29px;
+        text-align: center;
+        letter-spacing: 0.375px;
+    }
+   #features-upper #upper-title{
+        display: flex;
+        max-width: 100%;
+        justify-content: center;
+    }
+    #features-upper #upper-text{
+        max-width: 100%;
+        font-size: 12px;
+line-height: 22px;
+/* or 183% */
+
+text-align: center;
+letter-spacing: 0.1px;
+padding: 1%;
+
+    }
+
+    #features-down #features-down-elements{
+        width: 100%;
+        flex-wrap: wrap;
+    }
+    #features-down #features-down-elements .features-element{
+        flex: 100%;
+        max-width: 100%;
+        margin-bottom: 5%;
+        padding-right: 12%;
+        text-align: center;
+        margin-top: 20%;
+    }
+
+    #features-down #features-down-elements .features-element .features-element-title{
+        font-size: 14px;
+    line-height: 17px;
+    /* identical to box height */
+    
+    text-align: center;
+    letter-spacing: 0.2625px;
+    }
+    #features-down #features-down-elements .features-element .features-element-text{
+        font-size: 12px;
+    line-height: 20px;
+    /* or 167% */
+    
+    text-align: center;
+    letter-spacing: 0.171429px;
+    
+    color: #64626A;
+    }
+
+    #features-down-elements .features-element::before{
+        left: 35%;
+        top:-85%;
+    }
+    
+}
+
+

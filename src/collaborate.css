@@ -1,0 +1,147 @@
+#collaborate{
+    display: flex;
+    margin: 4% auto;
+    justify-content: space-around;
+    width: 100%;
+}
+
+#collaborate-img{
+    width: 40%;
+}
+
+#collaborate-right{
+    display: flex;
+    flex-direction: column;
+    width: 32%;
+}
+
+#collaborate-title{
+
+font-family: Aileron;
+font-style: normal;
+font-weight: bold;
+font-size: 48px;
+line-height: 58px;
+letter-spacing: 0.8px;
+
+color: #000000;
+
+}
+
+#collaborate-text{
+    padding-top: 4%;
+    width: 90%;
+    font-family: Aileron;
+font-style: normal;
+font-weight: normal;
+font-size: 18px;
+line-height: 156%;
+
+
+letter-spacing: 0.27px;
+
+color: #3B3A40;
+
+}
+
+#collaborate-elements{
+    width: 100%;
+    padding-top: 10%;
+    padding-left: 5%;
+    display: flex;
+    flex-wrap: wrap;
+
+    font-family: Aileron;
+font-style: normal;
+font-weight: bold;
+font-size: 16px;
+line-height: 19px;
+letter-spacing: 0.3px;
+
+color: #3B3A40;
+    
+}
+
+#collaborate-elements div{
+    
+    flex: 50%;
+    margin-top: 5%;
+    
+    
+}
+
+#collaborate-elements div span{
+    position: relative;
+    
+}
+
+#collaborate-elements div span:before{
+    position: absolute;
+    content: '';
+    width: 24px;
+    height: 24px;
+    background-image: url('./images/tik.svg');
+    left: -21px;
+}
+
+@media only screen and (max-width:768px){
+    #collaborate{
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: center;
+    }
+    #collaborate-right{
+        width: 100%;
+        justify-content: center;
+        
+    }
+    #collaborate-title{
+        text-align: center;
+    }
+    #collaborate-img{
+        width: 100%;
+        display: flex;
+        
+        
+    }
+    #collaborate-text{
+        width: 100%;
+        text-align: center;
+    }
+    #collaborate-elements{
+        width: 100%;
+       
+        text-align: center;
+    }
+    #collaborate-elements div{
+        flex: 33%;
+    }
+    
+}
+
+@media only screen and (max-width:320px){
+
+    #collaborate-title{
+        text-align: center;
+    }
+    #collaborate-img img{
+        width: 100%;
+        display: flex;
+        
+        
+    }
+
+    #collaborate-text{
+        width: 100%;
+        text-align: center;
+    }
+    #collaborate-elements{
+        width: 100%;
+       
+        text-align: center;
+    }
+    
+    #collaborate-elements div{
+        flex: 100%;
+    }
+}

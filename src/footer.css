@@ -1,0 +1,95 @@
+#footer{
+    display: flex;
+    width: 100%;
+    padding-left: 8%;
+    padding-bottom: 5%;
+    column-gap: 23%;
+    
+    
+}
+#social-links{
+    display: flex;
+    flex-direction: column;
+    
+}
+
+#social-link-logo{
+    margin-bottom: 10%;
+}
+
+#media-links{
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 60%;
+}
+
+#other-links{
+    width: 55%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.column{
+    display: flex;
+    flex-direction: column;
+}
+
+.column span{
+    margin-bottom: 10%;
+
+    font-family: Manrope;
+font-style: normal;
+font-weight: 800;
+font-size: 14px;
+line-height: 19px;
+
+color: #3B3A40;
+
+}
+.column div{
+    font-family: Inter;
+font-style: normal;
+font-weight: normal;
+font-size: 14px;
+line-height: 243%;
+/* or 243% */
+
+
+color: #64626A;
+
+}
+
+#other-links .column a{
+    text-decoration: none;
+    color: inherit;
+}
+
+@media only screen and (max-width:768px){
+    #footer{
+        column-gap: 14%;
+    }
+    
+}
+
+@media only screen and (max-width:320px){
+    
+   #footer{
+       flex-direction: column-reverse;
+   }
+   #social-links{
+       flex-direction: row;
+       justify-content: space-between;
+   }
+   #media-links{
+       display: none;
+   }
+   #other-links{
+    width: 100%;
+    flex-wrap: wrap;
+   }
+   #other-links .column{
+    flex: 40%;
+    padding-bottom: 10%;
+   }
+    
+}
