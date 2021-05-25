@@ -1,0 +1,250 @@
+@import url("https://use.typekit.net/ghl4zvs.css");
+#pricing{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+#pricing-up{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#pricing-up #title{
+    width: 47%;
+    font-family: Aileron;
+font-style: normal;
+font-weight: bold;
+font-size: 48px;
+line-height: 58px;
+text-align: center;
+letter-spacing: 0.8px;
+
+color: #000000;
+
+}
+
+#pricing-up #text{
+    padding-top: 2%;
+    font-family: Aileron;
+font-style: normal;
+font-weight: normal;
+font-size: 20px;
+line-height: 30px;
+/* identical to box height, or 150% */
+
+text-align: center;
+letter-spacing: 0.3px;
+
+color: #3B3A40;
+
+}
+
+#pricing-up img{
+    padding: 2% 0;
+}
+
+#pricing-down{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    column-gap: 2%;
+    margin-bottom: 10%;
+
+}
+#pricing-names{
+    display: none;
+    
+    width: 100%;
+    justify-content: space-around;
+    padding-bottom: 8%;
+    padding-top: 8%;
+
+    font-family: Roboto;
+font-style: normal;
+font-weight: normal;
+font-size: 16px;
+line-height: 19px;
+/* identical to box height */
+
+
+color: rgba(30, 85, 121, 0.8);
+    
+}
+
+#pricing-down .option{
+    
+    width: 27%;
+    display: flex;
+    overflow: hidden;
+    flex-direction: column;
+    background: #FFEDB6; /*FFEDB6*/
+    border-radius: 12px;
+    padding-left: 5%;
+    padding-right: 5%;
+    padding-top: 2%;
+}
+
+#pricing-down .option .amount{
+    font-family: Aileron;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 48px;
+    line-height: 58px;
+    /* identical to box height */
+    
+    letter-spacing: 0.8px;
+    
+    color: #EDB300;
+    
+}
+
+#pricing-down .option .option-name{
+    margin-top: 3%;
+    font-family: Aileron;
+font-style: normal;
+font-weight: bold;
+font-size: 18px;
+line-height: 22px;
+/* identical to box height */
+
+letter-spacing: 0.3375px;
+
+color: #3B3A40;
+
+}
+
+#pricing-down .option .option-explanation{
+    margin-top: 2%;
+    max-width: 229px;
+    font-family: Aileron;
+font-style: normal;
+font-weight: normal;
+font-size: 14px;
+line-height: 24px;
+/* or 171% */
+
+letter-spacing: 0.175px;
+
+color: #64626A;
+}
+
+#pricing-down .option .line{
+    text-align: right;
+}
+
+#pricing-down .option .option-features .feature{
+    padding-top: 1%;
+    padding-left: 2%;
+    font-family: Aileron;
+font-style: normal;
+font-weight: 600;
+font-size: 16px;
+line-height: 162%;
+/* identical to box height, or 162% */
+
+letter-spacing: 0.2px;
+
+color: #64626A;
+position: relative;
+
+}
+#pricing-down .option .option-features .feature::before{
+   
+    position: absolute;
+    width: 6%;
+    height: 100%;
+    content: "";
+    left: -5%;
+    background-image: url('./images/tik.svg');
+      background-repeat: no-repeat;
+}
+
+#pricing-down .option #trial{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    padding: 2%;
+    margin-top: 18%;
+    margin-bottom: 7%;
+
+    
+
+}
+
+#pricing-down .option #trial button{
+    border: none;
+    padding: 2%;
+    padding-top: 5%;
+    padding-bottom: 5%;
+    width: 85%;
+    background: #FFFFFF;
+box-shadow: inset 0px -2px 0px rgba(0, 0, 0, 0.12);
+border-radius: 8px;
+
+font-family: aileron;
+font-style: normal;
+font-weight: bold;
+font-size: 16px;
+line-height: 19px;
+text-align: center;
+letter-spacing: 0.2px;
+
+color: #000000;
+
+
+}
+#pricing-down .option #trial button:hover{
+    cursor: pointer;
+
+}
+
+@media only screen and (max-width:768px){
+    #pricing-up #title{
+        width: 100%;
+    }
+}
+
+
+@media only screen and (max-width:320px){
+   #bill-image{
+       width: 90%;
+   }
+   #pricing-down{
+       flex-direction: column;
+       justify-content: center;
+       align-items: center;
+   }
+   #pricing-down .option{
+       display: none;
+   }
+   #pricing-down  .active{
+    width: 90%;
+    display: flex;
+    overflow: hidden;
+    flex-direction: column;
+    background: #FFEDB6; /*FFEDB6*/
+    border-radius: 12px;
+    padding-left: 8%;
+    padding-right: 8%;
+    padding-top: 6%;
+   
+   }
+
+   #pricing-names{
+       display: flex;
+   }
+    
+}
+
+
+
+
+
+

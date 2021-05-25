@@ -1,0 +1,142 @@
+#testimonial{
+    padding: 5% 11% 5% 11%;
+    width: 100%;
+}
+
+#brands{
+    display: flex;
+    justify-content: space-between;
+
+}
+
+#brands img{
+    width: 12%;
+}
+
+#comments{
+    display: flex;
+    padding-top: 4%;
+    width: 100%;
+}
+.comment{
+    display: flex;
+    flex-direction: column;
+    background: #FFFFFF;
+border: 1px solid #D1D0D6;
+border-radius: 12px;
+padding: 15px 10px 3px 22px;
+width: 60%;
+}
+
+.comment-text{
+    padding-top: 16px;
+
+   
+
+font-family: Aileron;
+font-style: normal;
+font-weight: normal;
+font-size: 24px;
+line-height: 34px;
+/* or 142% */
+
+letter-spacing: 0.4px;
+
+color: #000000;
+}
+
+.comment-author{
+    display: flex;
+    margin-top: 12px;
+    margin-bottom: 8px;
+}
+
+.author-info{
+    display: flex;
+    flex-direction: column;
+    padding-left: 3%;
+    
+}
+
+.author-name{
+    font-family: Aileron;
+font-style: normal;
+font-weight: 600;
+font-size: 18px;
+line-height: 22px;
+/* identical to box height */
+
+letter-spacing: 0.3px;
+
+color: #3B3A40;
+
+}
+
+.author-position{
+    font-family: Aileron;
+font-style: normal;
+font-weight: normal;
+font-size: 14px;
+line-height: 17px;
+/* identical to box height */
+
+letter-spacing: 0.2px;
+
+color: #8E8C95;
+}
+
+.more-testimonial{
+    text-align: center;
+    padding-top: 40px;
+
+    font-family: Aileron;
+font-style: normal;
+font-weight: 600;
+font-size: 18px;
+line-height: 22px;
+/* identical to box height */
+
+
+
+color: #1E5579;
+
+}
+.more-testimonial a{
+    text-decoration: none;
+    color: #1E5579;
+}
+
+.more-testimonial img{
+   padding-left: 1%;
+}
+
+@media only screen and (max-width:768px){
+    
+}
+
+@media only screen and (max-width:320px){
+    #comments{
+        flex-direction: column;
+        width: 100%;
+    }
+    .comment{
+        width: 100%;
+    }
+    .comment-text{
+        font-size: 14px;
+line-height: 26px;
+/* or 186% */
+
+letter-spacing: 0.233333px;
+    }
+    #testimonial #brands{
+        flex-wrap: wrap;
+    }
+    #testimonial #brands img{
+        padding: 4%;
+        flex: 50%;
+    }
+   
+   
+    
+}
